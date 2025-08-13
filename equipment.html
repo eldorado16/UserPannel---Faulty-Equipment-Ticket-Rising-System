@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <title>Equipment Details</title>
+  <style>
+  .equipment-section {
+    max-width: 1100px;
+    margin: 2rem auto;
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: background 0.3s ease;
+  }
+
+  .equipment-section h2 {
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .equipment-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .equipment-table th,
+  .equipment-table td {
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--grey);
+    color: var(--dark);
+  }
+
+  .equipment-table th {
+    background-color: var(--grey);
+    font-weight: 600;
+  }
+
+  .equipment-table tbody tr:hover {
+    background-color: rgba(60, 145, 230, 0.05); /* subtle blue for both modes */
+    transition: 0.3s;
+  }
+
+  .owner-upmrc {
+    color: var(--blue);
+    font-weight: 600;
+  }
+
+  .owner-user {
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .equipment-section {
+      padding: 1rem;
+    }
+
+    .equipment-table {
+      font-size: 0.85rem;
+    }
+
+    .equipment-table th,
+    .equipment-table td {
+      padding: 0.75rem;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <section id="sidebar">
+    <a href="equipment.html" class="brand">
+      <i class='bx bxs-smile'></i>
+      <span class="text">User Panel</span>
+    </a>
+    <ul class="side-menu top">
+      <li><a href="index.html"><i class='bx bxs-dashboard'></i><span class="text">Dashboard</span></a></li>
+      <li><a href="account.html"><i class='bx bxs-user'></i><span class="text">Account Info</span></a></li>
+      <li class="active"><a href="equipment.html"><i class='bx bxs-doughnut-chart'></i><span class="text">Equipment Details</span></a></li>
+      <li><a href="ticket.html"><i class='bx bxs-message-dots'></i><span class="text">Raise Ticket</span></a></li>
+    </ul>
+  </section>
+
+  <!-- CONTENT -->
+  <section id="content">
+    <nav>
+      <i class='bx bx-menu'></i>
+      <a href="#" class="nav-link">Equipment Section</a>
+      <form>
+        <div class="form-input"><input type="search" placeholder="Search..." />
+          <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+        </div>
+      </form>
+      <input type="checkbox" id="switch-mode" hidden />
+      <label for="switch-mode" class="switch-mode"></label>
+      <a href="#" class="notification"><i class='bx bxs-bell'></i><span class="num">3</span></a>
+      <a href="#" class="profile"><img src="people.png" /></a>
+    </nav>
+
+    <main>
+      <div class="equipment-section">
+        <h2>Assigned Equipment</h2>
+        <table class="equipment-table">
+          <thead>
+            <tr>
+              <th>Equipment</th>
+              <th>Model</th>
+              <th>Serial Number</th>
+              <th>Issue Date</th>
+              <th>Owned By</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Laptop</td>
+              <td>HP EliteBook 840</td>
+              <td>LP00123</td>
+              <td>2023-02-15</td>
+              <td class="owner-upmrc">UPMRC</td>
+            </tr>
+            <tr>
+              <td>Printer</td>
+              <td>Canon LBP2900</td>
+              <td>PR98234</td>
+              <td>2023-05-10</td>
+              <td class="owner-user">User</td>
+            </tr>
+            <tr>
+              <td>Access Point</td>
+              <td>TP-Link Deco X20</td>
+              <td>AP54823</td>
+              <td>2024-01-25</td>
+              <td class="owner-upmrc">UPMRC</td>
+            </tr>
+            <tr>
+              <td>Mobile Phone</td>
+              <td>Samsung Galaxy M14</td>
+              <td>MB77389</td>
+              <td>2024-06-01</td>
+              <td class="owner-user">User</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>UPMRC User Dashboard</title>
+</head>
+
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">User Pannel</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="index.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="account.html">
+					<i class='bx bxs-shopping-bag-alt'></i>
+					<span class="text">Account Info</span>
+				</a>
+			</li>
+			<li>
+				<a href="equipment.html">
+					<i class='bx bxs-doughnut-chart'></i>
+					<span class="text">Equipment Details</span>
+				</a>
+			</li>
+			<li>
+				<a href="ticket.html">
+					<i class='bx bxs-message-dots'></i>
+					<span class="text">Ticket Raising</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group'></i>
+					<span class="text">More</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu'></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<ul class="box-info">
+				<li>
+
+					<span class="text">
+						<h3>10</h3>
+						<p>Active Tickets</p>
+					</span>
+				</li>
+				<li>
+
+					<span class="text">
+						<h3>280</h3>
+						<p>Closed Tickets</p>
+					</span>
+				</li>
+				<li>
+
+					<span class="text">
+						<h3>400</h3>
+						<p>Total Ticket Raised</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Total Tickets </h3>
+						<i class='bx bx-search'></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Ticket ID</th>
+								<th>Date of Issue</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+
+									<p>990@20</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+							<tr>
+								<td>
+
+									<p>990@37</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status closed">Closed</span></td>
+							</tr>
+							<tr>
+								<td>
+
+									<p>990@3</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+
+									<p>990@7</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status closed">Closed</span></td>
+							</tr>
+							<tr>
+								<td>
+
+									<p>990@15</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+							<tr>
+								<td>
+
+									<p>990@6</p>
+								</td>
+								<td>01-10-2021</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="secular">
+					<div class="head">
+						<h3>Tickets in Process</h3>
+						<i class='bx bx-search'></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Ticket ID</th>
+								<th>Date of Issue</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+
+									<p>990@1</p>
+								</td>
+								<td>30-05-2025</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+
+									<p>990@2</p>
+								</td>
+								<td>01-06-2025</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+
+									<p>990@3</p>
+								</td>
+								<td>03-06-2025</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+									<p>990@4</p>
+								</td>
+								<td>04-06-2025</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+									<p>990@5</p>
+								</td>
+								<td>07-06-2025</td>
+								<td><span class="status process">Procress</span></td>
+							</tr>
+							<tr>
+								<td>
+									<p>990@6</p>
+								</td>
+								<td>10-06-2025</td>
+								<td><span class="status process">Procress</span></td>
+							</tr>
+						</tbody>
+					</table>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>
